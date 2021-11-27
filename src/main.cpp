@@ -42,14 +42,14 @@ void loop()
       int val;
       val=analogRead(analogPin);//Connect the sensor to analog pin 0
 
-if(val < 50){
+if(val < 20){
     digitalWrite(RedLED, HIGH);
     digitalWrite(GreenLED, LOW);
      StatusFerme = true ;
      StatusOuvert =  false ;
 
     
-  }else if(val >= 50){  
+  }else if(val >=20){  
     digitalWrite(GreenLED, HIGH);
     digitalWrite(RedLED, LOW);
     StatusFerme =  false ;
